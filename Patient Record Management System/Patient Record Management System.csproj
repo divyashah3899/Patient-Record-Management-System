@@ -1,0 +1,478 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{31AD2CC5-61B5-4D95-A171-5FE5760036AF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Patient_Record_Management_System</RootNamespace>
+    <AssemblyName>Patient Record Management System</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Patient_Record_Management_System.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp">
+      <HintPath>D:\Chrom Downloads\CreatePdf\CreatePdf\CreatePdf\bin\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Add_appointment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_appointment.Designer.cs">
+      <DependentUpon>Add_appointment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Medicine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Medicine.Designer.cs">
+      <DependentUpon>Add_Medicine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Patient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Patient.Designer.cs">
+      <DependentUpon>Add_Patient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="All_Patient_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="All_Patient_List.Designer.cs">
+      <DependentUpon>All_Patient_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bill_generate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bill_generate.Designer.cs">
+      <DependentUpon>Bill_generate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\Appointment.cs" />
+    <Compile Include="Class\Medicine.cs" />
+    <Compile Include="Class\Patient.cs" />
+    <Compile Include="doctorlogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="doctorlogin.Designer.cs">
+      <DependentUpon>doctorlogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Doctor_Add_Medicine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doctor_Add_Medicine.Designer.cs">
+      <DependentUpon>Doctor_Add_Medicine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Doctor_Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doctor_Dashboard.Designer.cs">
+      <DependentUpon>Doctor_Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login As.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login As.Designer.cs">
+      <DependentUpon>Login As.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage_appointment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage_appointment.Designer.cs">
+      <DependentUpon>Manage_appointment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage_Medicine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage_Medicine.Designer.cs">
+      <DependentUpon>Manage_Medicine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage_patient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage_patient.Designer.cs">
+      <DependentUpon>Manage_patient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pharmacist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pharmacist.Designer.cs">
+      <DependentUpon>pharmacist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacist_dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pharmacist_dashboard.Designer.cs">
+      <DependentUpon>Pharmacist_dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prescribe_Medicine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prescribe_Medicine.Designer.cs">
+      <DependentUpon>Prescribe_Medicine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PRMSDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PRMSDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PRMSDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PRMSDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PRMSDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PRMSDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PRMSDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PRMSDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PRMSDataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PRMSDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PRMSDataSet13.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PRMSDataSet13.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PRMSDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PRMSDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PRMSDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PRMSDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PRMSDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PRMSDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PRMSDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PRMSDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PRMSDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PRMSDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PRMSDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PRMSDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PRMSDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PRMSDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PRMSDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PRMSDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="receptionistlogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="receptionistlogin.Designer.cs">
+      <DependentUpon>receptionistlogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Receptionist_Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Receptionist_Dashboard.Designer.cs">
+      <DependentUpon>Receptionist_Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Show_Prescription.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Show_Prescription.Designer.cs">
+      <DependentUpon>Show_Prescription.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Today_Appointment_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Today_Appointment_List.Designer.cs">
+      <DependentUpon>Today_Appointment_List.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Add_appointment.resx">
+      <DependentUpon>Add_appointment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_Medicine.resx">
+      <DependentUpon>Add_Medicine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_Patient.resx">
+      <DependentUpon>Add_Patient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="All_Patient_List.resx">
+      <DependentUpon>All_Patient_List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bill_generate.resx">
+      <DependentUpon>Bill_generate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="doctorlogin.resx">
+      <DependentUpon>doctorlogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doctor_Add_Medicine.resx">
+      <DependentUpon>Doctor_Add_Medicine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doctor_Dashboard.resx">
+      <DependentUpon>Doctor_Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login As.resx">
+      <DependentUpon>Login As.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage_appointment.resx">
+      <DependentUpon>Manage_appointment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage_Medicine.resx">
+      <DependentUpon>Manage_Medicine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage_patient.resx">
+      <DependentUpon>Manage_patient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pharmacist.resx">
+      <DependentUpon>pharmacist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacist_dashboard.resx">
+      <DependentUpon>Pharmacist_dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prescribe_Medicine.resx">
+      <DependentUpon>Prescribe_Medicine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="receptionistlogin.resx">
+      <DependentUpon>receptionistlogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Receptionist_Dashboard.resx">
+      <DependentUpon>Receptionist_Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Show_Prescription.resx">
+      <DependentUpon>Show_Prescription.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Today_Appointment_List.resx">
+      <DependentUpon>Today_Appointment_List.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="PRMSDataSet.xsc">
+      <DependentUpon>PRMSDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PRMSDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PRMSDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PRMSDataSet.xss">
+      <DependentUpon>PRMSDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PRMSDataSet1.xsc">
+      <DependentUpon>PRMSDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="PRMSDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PRMSDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PRMSDataSet1.xss">
+      <DependentUpon>PRMSDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="PRMSDataSet10.xsc">
+      <DependentUpon>PRMSDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="PRMSDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PRMSDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PRMSDataSet10.xss">
+      <DependentUpon>PRMSDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="PRMSDataSet11.xsc">
+      <DependentUpon>PRMSDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="PRMSDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PRMSDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PRMSDataSet11.xss">
+      <DependentUpon>PRMSDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="PRMSDataSet12.xsc">
+      <DependentUpon>PRMSDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="PRMSDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PRMSDataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PRMSDataSet12.xss">
+      <DependentUpon>PRMSDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="PRMSDataSet13.xsc">
+      <DependentUpon>PRMSDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="PRMSDataSet13.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PRMSDataSet13.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PRMSDataSet13.xss">
+      <DependentUpon>PRMSDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="PRMSDataSet2.xsc">
+      <DependentUpon>PRMSDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="PRMSDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PRMSDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PRMSDataSet2.xss">
+      <DependentUpon>PRMSDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="PRMSDataSet3.xsc">
+      <DependentUpon>PRMSDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="PRMSDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PRMSDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PRMSDataSet3.xss">
+      <DependentUpon>PRMSDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="PRMSDataSet4.xsc">
+      <DependentUpon>PRMSDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="PRMSDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PRMSDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PRMSDataSet4.xss">
+      <DependentUpon>PRMSDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="PRMSDataSet5.xsc">
+      <DependentUpon>PRMSDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="PRMSDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PRMSDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PRMSDataSet5.xss">
+      <DependentUpon>PRMSDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="PRMSDataSet6.xsc">
+      <DependentUpon>PRMSDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="PRMSDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PRMSDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PRMSDataSet6.xss">
+      <DependentUpon>PRMSDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="PRMSDataSet7.xsc">
+      <DependentUpon>PRMSDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="PRMSDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PRMSDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PRMSDataSet7.xss">
+      <DependentUpon>PRMSDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="PRMSDataSet8.xsc">
+      <DependentUpon>PRMSDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="PRMSDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PRMSDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PRMSDataSet8.xss">
+      <DependentUpon>PRMSDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="PRMSDataSet9.xsc">
+      <DependentUpon>PRMSDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="PRMSDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PRMSDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PRMSDataSet9.xss">
+      <DependentUpon>PRMSDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

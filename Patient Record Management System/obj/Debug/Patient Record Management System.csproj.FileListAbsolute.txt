@@ -1,0 +1,31 @@
+C:\Users\divya\Source\Repos\Patient Record Management System\Patient Record Management System\bin\Debug\Patient Record Management System.exe.config
+C:\Users\divya\Source\Repos\Patient Record Management System\Patient Record Management System\bin\Debug\Patient Record Management System.exe
+C:\Users\divya\Source\Repos\Patient Record Management System\Patient Record Management System\bin\Debug\Patient Record Management System.pdb
+C:\Users\divya\Source\Repos\Patient Record Management System\Patient Record Management System\bin\Debug\itextsharp.dll
+C:\Users\divya\Source\Repos\Patient Record Management System\Patient Record Management System\bin\Debug\itextsharp.xml
+C:\Users\divya\Source\Repos\Patient Record Management System\Patient Record Management System\obj\Debug\Patient Record Management System.csprojAssemblyReference.cache
+C:\Users\divya\Source\Repos\Patient Record Management System\Patient Record Management System\obj\Debug\Patient_Record_Management_System.Add_appointment.resources
+C:\Users\divya\Source\Repos\Patient Record Management System\Patient Record Management System\obj\Debug\Patient_Record_Management_System.Add_Medicine.resources
+C:\Users\divya\Source\Repos\Patient Record Management System\Patient Record Management System\obj\Debug\Patient_Record_Management_System.Add_Patient.resources
+C:\Users\divya\Source\Repos\Patient Record Management System\Patient Record Management System\obj\Debug\Patient_Record_Management_System.All_Patient_List.resources
+C:\Users\divya\Source\Repos\Patient Record Management System\Patient Record Management System\obj\Debug\Patient_Record_Management_System.Bill_generate.resources
+C:\Users\divya\Source\Repos\Patient Record Management System\Patient Record Management System\obj\Debug\Patient_Record_Management_System.doctorlogin.resources
+C:\Users\divya\Source\Repos\Patient Record Management System\Patient Record Management System\obj\Debug\Patient_Record_Management_System.Doctor_Add_Medicine.resources
+C:\Users\divya\Source\Repos\Patient Record Management System\Patient Record Management System\obj\Debug\Patient_Record_Management_System.Doctor_Dashboard.resources
+C:\Users\divya\Source\Repos\Patient Record Management System\Patient Record Management System\obj\Debug\Patient_Record_Management_System.Login_As.resources
+C:\Users\divya\Source\Repos\Patient Record Management System\Patient Record Management System\obj\Debug\Patient_Record_Management_System.Manage_appointment.resources
+C:\Users\divya\Source\Repos\Patient Record Management System\Patient Record Management System\obj\Debug\Patient_Record_Management_System.Manage_Medicine.resources
+C:\Users\divya\Source\Repos\Patient Record Management System\Patient Record Management System\obj\Debug\Patient_Record_Management_System.Manage_patient.resources
+C:\Users\divya\Source\Repos\Patient Record Management System\Patient Record Management System\obj\Debug\Patient_Record_Management_System.pharmacist.resources
+C:\Users\divya\Source\Repos\Patient Record Management System\Patient Record Management System\obj\Debug\Patient_Record_Management_System.Pharmacist_dashboard.resources
+C:\Users\divya\Source\Repos\Patient Record Management System\Patient Record Management System\obj\Debug\Patient_Record_Management_System.Prescribe_Medicine.resources
+C:\Users\divya\Source\Repos\Patient Record Management System\Patient Record Management System\obj\Debug\Patient_Record_Management_System.receptionistlogin.resources
+C:\Users\divya\Source\Repos\Patient Record Management System\Patient Record Management System\obj\Debug\Patient_Record_Management_System.Properties.Resources.resources
+C:\Users\divya\Source\Repos\Patient Record Management System\Patient Record Management System\obj\Debug\Patient_Record_Management_System.Receptionist_Dashboard.resources
+C:\Users\divya\Source\Repos\Patient Record Management System\Patient Record Management System\obj\Debug\Patient_Record_Management_System.Show_Prescription.resources
+C:\Users\divya\Source\Repos\Patient Record Management System\Patient Record Management System\obj\Debug\Patient_Record_Management_System.Today_Appointment_List.resources
+C:\Users\divya\Source\Repos\Patient Record Management System\Patient Record Management System\obj\Debug\Patient Record Management System.csproj.GenerateResource.cache
+C:\Users\divya\Source\Repos\Patient Record Management System\Patient Record Management System\obj\Debug\Patient Record Management System.csproj.CoreCompileInputs.cache
+C:\Users\divya\Source\Repos\Patient Record Management System\Patient Record Management System\obj\Debug\Patient Record Management System.csproj.CopyComplete
+C:\Users\divya\Source\Repos\Patient Record Management System\Patient Record Management System\obj\Debug\Patient Record Management System.exe
+C:\Users\divya\Source\Repos\Patient Record Management System\Patient Record Management System\obj\Debug\Patient Record Management System.pdb
